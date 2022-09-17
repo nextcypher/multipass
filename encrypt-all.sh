@@ -14,6 +14,6 @@ do
 	ENCF=`printf 'jpgdata/%04u.jpg' $n`
 	#echo "$EF -> $ENCF"
 
-	steghide embed -ef $EF -cf $ENCF -p "`cat $KF`" -sf $ENCF.out
+	steghide embed -ef $EF -cf $ENCF -p "`cat $KF`"
 done
 
