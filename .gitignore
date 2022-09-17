@@ -2,4 +2,5 @@
 mkseed
 gen-txt
 SHA256.txt
+.common_pass
 

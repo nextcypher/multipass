@@ -45,10 +45,10 @@ $ ./check-all.sh	# validate extracted data from each NFT image
 ## Cryptography discussion: Shared password!
 
 As a developer will quickly note, these scripts encrypt the data
-*using a common passphrase for all JPEGs*.  Each NFT holder knows the
-password for all NFTs, because all NFTs in a collection share the same
-password.  Thus, the encrypted data in *any* NFT can be considered well
-known by all in that community.
+*using a common root passphrase for all JPEGs*.  Each NFT holder can
+calculate the password for all NFTs, because all NFTs in a collection
+share a similar password.  Thus, the encrypted data in *any* NFT can
+be considered well known by all in that community.
 
 This makes the encryption a "reveal" style novelty:
 once the secret's out, the secret's out for all.
@@ -58,4 +58,6 @@ This creates the new problem of privately and securely distributing
 passwords to NFT holders, including new transferees months and years
 into the future, which is left as an exercise for the reader.
 
+The script infrastructure supports alternative, more-private key
+distribution methods via developer-supplied keydata/*.key files.
 
