@@ -1,6 +1,14 @@
 
 # NextCypher multipass generator scripts
 
+Steganography and NFTs
+
+## Introduction
+
+This repository demonstrates how to vary a single JPEG image into multiple
+NFT images, by drawing a text label on each image, then encrypting and
+inserting a small metadata file into the JPEG using steganography.
+
 ## List of Scripts
 
 * check-all.sh: Extract ciphertext from JPG and validate against original
