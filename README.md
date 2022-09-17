@@ -36,6 +36,7 @@ $ vi get-txt.c		# edit NFT drop loot, if desired
 $ gcc -Wall -O -o gen-txt gen-txt.c # recompile gen-txt # recompile
 $ ./gen-txt		# generate NFT loot
 $ ./stamp-all.sh	# stamp each NFT with a number
+$ ./gen-sums.sh		# generate sha256 sums of metadata files
 $ ./encrypt-all.sh	# store loot into NFT image
 $ ./extract-all.sh	# extract data stored in each NFT image
 $ ./check-all.sh	# validate extracted data from each NFT image
