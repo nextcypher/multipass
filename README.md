@@ -41,7 +41,7 @@ $ ./extract-all.sh	# extract data stored in each NFT image
 $ ./check-all.sh	# validate extracted data from each NFT image
 ```
 
-## Cryptography discussion
+## Cryptography discussion: Shared password!
 
 As a developer will quickly note, these scripts encrypt the data
 *using a common passphrase for all JPEGs*.  Each NFT holder knows the
