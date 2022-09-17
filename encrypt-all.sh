@@ -1,7 +1,11 @@
 #!/bin/bash
 
-INF=NXC-MultiPass-300dpi.jpg
-N=1138
+if [ $# -eq 0 ]
+then
+	N=1138
+else
+	N=$1
+fi
 
 for (( n=1; n<=$N; n++ ))
 do
@@ -9,6 +13,6 @@ do
 	ENCF=`printf 'jpgdata/%04u.jpg' $n`
 	#echo "$EF -> $ENCF"
 
-	steghide embed -ef $EF -cf $INF -p "nextcypher multipass" -sf $ENCF
+	steghide embed -ef $EF -cf $ENCF -p "nextcypher multipass"
 done
 
