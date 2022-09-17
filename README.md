@@ -21,5 +21,6 @@ $ gcc -Wall -O -o gen-txt gen-txt.c # recompile gen-txt # recompile
 $ ./gen-txt		# generate NFT loot
 $ ./stamp-all.sh	# stamp each NFT with a number
 $ ./encrypt-all.sh	# store loot into NFT image
-$ ./check-all.sh	# validate data stored in each NFT image
+$ ./extract-all.sh	# extract data stored in each NFT image
+$ ./check-all.sh	# validate extracted data from each NFT image
 ```
