@@ -7,7 +7,13 @@ Steganography and NFTs
 
 This repository demonstrates how to vary a single JPEG image into multiple
 NFT images, by drawing a text label on each image, then encrypting and
-inserting a small metadata file into the JPEG using steganography.
+inserting a small metadata file into the JPEG using steganography, using
+a sequence of steps:
+
+1. **INPUT**: A single JPEG file.
+2. **MODIFY**: Add the NFT number to the bottom left & right image corners.
+3. **MODIFY**: Add encrypted data using steganography.
+4. **OUTPUT**: The modified JPEG files, aka the NFT collection.
 
 ## List of Scripts
 
