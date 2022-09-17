@@ -13,10 +13,11 @@ then
 	exit 1
 fi
 
-./gen-loot $N
-./stamp-all.sh $N
-./encrypt-all.sh $N
-./gen-sums.sh
-./extract-all.sh $N
-./check-all.sh $N
+./gen-loot $N && \
+	./stamp-all.sh $N && \
+	./encrypt-all.sh $N && \
+	./gen-sums.sh && \
+	./extract-all.sh $N && \
+	./check-all.sh $N &&
+	echo "$0: success. $N images and metadata generated."
 
