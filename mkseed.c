@@ -1,3 +1,6 @@
+
+// build with: gcc -Wall -O -o mkseed mkseed.c
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>

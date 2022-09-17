@@ -1,4 +1,6 @@
 
+// Build with: gcc -Wall -O -o gen-txt gen-txt.c
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
