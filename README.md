@@ -22,19 +22,21 @@ a sequence of steps:
 * decrypt-jpg.sh: Extract ciphertext from the specified JPG
 * encrypt-all.sh: Store ciphertext inside JPGs
 * extract-all.sh: Extract all ciphertexts from all JPGs
+* gen-keys.sh: Generate per-NFT encryption passphrases, using a common root
 * gen-sums.sh: Checksum all JSON data
-* gen-txt.c: Generate random data for NFTs
+* gen-loot.c: Generate random data for NFTs
 * generate.sh: Generate all data from a clean repo
-* mkseed.c: Generate random seed to be used for gen-txt
+* mkseed.c: Generate random seed to be used for gen-loot
 * NXC-MultiPass-300dpi.jpg: original input data
 * stamp-all.sh: Write NFT number in bottom corners of each JPG
 
 ## NFT drop creation steps
 
 ```
+$ ./gen-keys.sh		# Generate insecure, common-root keys
 $ vi get-txt.c		# edit NFT drop loot, if desired
-$ gcc -Wall -O2 -o gen-txt gen-txt.c  # recompile gen-txt
-$ ./gen-txt		# generate NFT loot
+$ gcc -Wall -O2 -o gen-loot gen-loot.c  # recompile gen-loot
+$ ./gen-loot		# generate NFT loot
 $ ./stamp-all.sh	# stamp each NFT with a number
 $ ./gen-sums.sh		# generate sha256 sums of metadata files
 $ ./encrypt-all.sh	# store loot into NFT image

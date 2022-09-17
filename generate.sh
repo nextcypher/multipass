@@ -7,13 +7,13 @@ else
 	N=$1
 fi
 
-if [ ! -f ./gen-txt ]
+if [ ! -f ./gen-loot ]
 then
-	echo "Error: gen-txt not found.  Please build it."
+	echo "Error: gen-loot not found.  Please build it."
 	exit 1
 fi
 
-./gen-txt
+./gen-loot $N
 ./stamp-all.sh $N
 ./encrypt-all.sh $N
 ./gen-sums.sh

@@ -1,12 +1,12 @@
 
-// Build with: gcc -Wall -O2 -o gen-txt gen-txt.c
+// Build with: gcc -Wall -O2 -o gen-loot gen-loot.c
 
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
 #include <limits.h>
 
-static const unsigned int n_tokens = 1138;
+static const unsigned int DEF_N_TOKENS = 1138;
 static const unsigned int NXC_SEED = 2716689190;
 
 static int cmp_int(const void *p1, const void *p2)
@@ -83,6 +83,10 @@ static void generate_token_text(unsigned int id)
 int main (int argc, char *argv[])
 {
 	srandom(NXC_SEED);
+
+	unsigned int n_tokens = DEF_N_TOKENS;
+	if ((argc == 2) && (atoi(argv[1]) > 0))
+		n_tokens = (unsigned int) atoi(argv[1]);
 
 	for (unsigned int n = 0; n < n_tokens; n++)
 		generate_token_text(n + 1);
