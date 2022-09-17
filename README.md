@@ -54,7 +54,7 @@ This makes the encryption a "reveal" style novelty:
 once the secret's out, the secret's out for all.
 
 An obvious improvement is to create a unique password for each NFT.
-This creates the new problem of privately and secured distributing
+This creates the new problem of privately and securely distributing
 passwords to NFT holders, including new transferees months and years
 into the future, which is left as an exercise for the reader.
 
