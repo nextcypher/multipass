@@ -1,4 +1,6 @@
 #!/bin/sh
 
-rm -f checkdata/*.json jsondata/*.json jpgdata/*.jpg
+rm -f gen-txt mkseed \
+	checkdata/*.json jsondata/*.json jpgdata/*.jpg \
+	SHA256.txt
 

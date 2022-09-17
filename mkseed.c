@@ -1,5 +1,5 @@
 
-// build with: gcc -Wall -O -o mkseed mkseed.c
+// build with: gcc -Wall -O2 -o mkseed mkseed.c
 
 #include <stdlib.h>
 #include <string.h>

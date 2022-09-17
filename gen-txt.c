@@ -1,5 +1,5 @@
 
-// Build with: gcc -Wall -O -o gen-txt gen-txt.c
+// Build with: gcc -Wall -O2 -o gen-txt gen-txt.c
 
 #include <stdlib.h>
 #include <string.h>
