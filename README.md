@@ -40,3 +40,21 @@ $ ./encrypt-all.sh	# store loot into NFT image
 $ ./extract-all.sh	# extract data stored in each NFT image
 $ ./check-all.sh	# validate extracted data from each NFT image
 ```
+
+## Cryptography discussion
+
+As a developer will quickly note, these scripts encrypt the data
+*using a common passphrase for all JPEGs*.  Each NFT holder knows the
+password for all NFTs, because all NFTs in a collection share the same
+password.  Thus, the encrypted data in *any* NFT can be considered well
+known by all in that community.
+
+This makes the encryption a "reveal" style novelty:
+once the secret's out, the secret's out for all.
+
+An obvious improvement is to create a unique password for each NFT.
+This creates the new problem of privately and secured distributing
+passwords to NFT holders, including new transferees months and years
+into the future, which is left as an exercise for the reader.
+
+
